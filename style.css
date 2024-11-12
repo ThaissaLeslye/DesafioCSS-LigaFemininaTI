@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --dark-purple: #170550;
+    --purple:#31065A;
+    --font: #FFFFFF;
+    --contrast-font: #C099E3;
+    --grey-purple: #43366A;
+    --hover: #AD5BFB;
+}
+
+/* GERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Exo 2", sans-serif;
+    color: var(--font);
+}
+
+a {
+    text-decoration: none;
+}
+
+.left {
+    float: left;
+}
+
+.contrast {
+    color: var(--contrast-font);
+}
+
+.screen {
+    width: 100vw;
+    height: 100vh;
+    min-height: 820px;
+    padding-top: 85px;
+}
+
+.content {
+    width: 1114px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.barra {
+    width: 225px;
+    height: 2px;
+    background-color: var(--font);
+    margin: 0 auto;
+    margin-bottom: 187px;
+}
+
+.title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
+/* HEADER */
+
+header {
+    width: 100vw;
+    height: 85px;
+    background-color: var(--dark-purple);
+    position: fixed;
+    z-index: 1;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1114px;
+    height: 75px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.logo img{
+    width: 73px;
+    height: 76px;
+    border-radius: 50px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding-right: 23px;
+}
+
+nav ul li a {
+    color: var(--font);
+    
+}
+
+nav ul li a:hover {
+    color: var(--contrast-font);
+}
+
+nav ul li:last-child {
+    padding-right: 0px;
+}
+
+/* SECTION HOME */
+
+#home {
+    background-color: var(--purple);
+}
+
+#home .left {
+    width: 575px;
+    height: 447px;
+    padding-top: 167px;
+}
+
+.left span {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.left h1 {
+    font-size: 60px;
+    padding-bottom: 10px;
+}
+
+.left p {
+    font-size: 20px;
+    padding: 15px 0 25px 0;
+}
+
+.left .instagram {
+    padding: 0 15px 0 20px;
+}
+
+#home .right {
+    float: right;
+}
+
+.right img {
+    padding-top: 187px;
+    width: 480px;
+    border-radius: 250px;
+}
+
+/* SECTION SOBRE-NOS */
+
+#sobre-nos {
+    background-color: var(--dark-purple);
+}
+
+#sobre-nos .left {
+    float: left;
+}
+
+#sobre-nos .right {
+    float: right;
+    width: 630px;
+    height: 376px;
+}
+
+#sobre-nos .subtitle {
+    font-weight: 600;
+    font-size: 30px;
+    padding-bottom: 44px;
+}
+
+#sobre-nos p {
+    padding-bottom: 28px;
+    font-size: 18px;
+}
+
+#sobre-nos button {
+    width: 177px;
+    height: 40px;
+    border-radius: 20px;
+    color: var(--purple);
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    margin-top: 30px;
+}
+
+/* SECTION PROJETOS */
+
+#projetos {
+    background-color: var(--purple);
+}
+
+.banner {
+    width: 360px;
+    height: 400px;
+    border-radius: 15px;
+    background-color: var(--font);
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.banner:last-child {
+    margin-right: 0;
+}
+
+.banner .b-img {
+    margin: 0 auto;
+    width: 80px;
+    padding: 50px 0;
+}
+
+.banner  h4{
+    font-size: 25px;
+    color: var(--dark-purple);
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.banner p {
+    font-size: 18px;
+    color: var(--dark-purple);
+    width: 305px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* SECTION DADOS */
+
+#dados {
+    background-color: var(--dark-purple);
+}
+
+#dados table {
+    width: 1110px;
+    height: 390px;
+    font-size: 25px;
+    border-collapse: separate;
+    overflow: hidden;
+    border: 1px solid var(--font);
+    border-radius: 25px;
+}
+
+#dados thead {
+    height: 92px;
+    background-color: var(--font);
+}
+
+#dados thead th {
+    color: var(--dark-purple);
+}
+
+
+#dados tbody th, td{
+    border: 1px solid var(--font);
+}
+#dados th, td {
+    width: 33%;
+    text-align: center;
+}
+
+/* SECTION PARTICIPANTES */
+
+#participantes {
+    background-color: var(--purple);
+}
+
+#participantes .galeria {
+    width: calc(4*275px + 3*20px + 20px);
+}
+
+#participantes .image{
+    width: 275px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 8px;
+    display: inline-block;
+    position: relative;
+}
+.image img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+.image .content {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    position: absolute;
+    background-color: rgba(173, 91, 251, 0.6);
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0;
+}
+
+.image .content:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.image .content img {
+    width: 25px;
+    padding-top: 70px;
+    padding-bottom: 10px;
+}
+
+.image .content a {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* SECTION CONTATO */
+
+#contato {
+    background-color: var(--dark-purple);
+}
+
+#contato .left {
+    padding-top: 95px;
+}
+
+#contato .contact {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#contato .contact img {
+    margin-right: 40px;
+}
+
+#contato .right {
+    float: right;
+    width: 657px;
+    height: 500px;
+    text-align: center;
+}
+
+input, textarea{
+    width: 657px;
+    height: 40px;
+    border-radius: 50px;
+    padding: 20px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: var(--grey-purple);
+    font-size: 16px;
+    font-weight: 600;
+    outline:0;
+}
+
+input:hover, textarea:hover {
+    border: 3px solid var(--hover);
+}
+
+#contato textarea {
+    height: 148px;
+    border-radius: 20px;
+    padding-top: 15px;
+}
+
+#phone-number {
+    max-width: 325px;
+    margin-right: 17px;
+}
+
+#subject {
+    max-width: 315px;
+}
+
+#contato input::placeholder, textarea::placeholder {
+    color: var(--font)
+}
+
+#contato button {
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--grey-purple);
+    color: var(--font);
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+
+button:active {
+    border: 3px solid var(--hover);
+}
+
+/* FOOTER */
+
+footer {
+    width: 100vw;
+    height: 100px;
+    background-color: var(--purple);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+}
